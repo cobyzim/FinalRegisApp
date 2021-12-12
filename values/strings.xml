@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">RegisApplication</string>
+    <!-- Strings for Main Activity -->
+    <string name="welcome">WELCOME!</string>
+    <string name="studentOrFaculty">Are You a Student or a Faculty Member?</string>
+    <string name="studentButton">Student</string>
+    <string name="facultyButton">Faculty</string>
+    <string name="haveAccount">Don\'t Have an Account? Click the Button Below to Make One!</string>
+    <string name="createAccountButton">Create Account</string>
+
+    <!-- Create Account -->
+    <string name="createAccountTopText">Create Account</string>
+    <string name="facultyRadioButtn">Faculty</string>
+    <string name="studentRadioButtn">Student</string>
+    <string name="passwordHint">Enter Password</string>
+    <string name="usernameHint">Enter Student ID or Faculty Name</string>
+    <string name="selectStuOrFac">Select if You Are a Student or Faculty Member</string>
+    <string name="imageContextDesc">Regis Main Hall</string>
+    <string name="submitBttn">Submit</string>
+    <string name="cancelBttn">Cancel</string>
+
+    <!-- Student Login -->
+    <string name="studentLoginTopText">Login:</string>
+    <string name="studentLoginID">Student ID</string>
+    <string name="studentLoginIDPrompt">Enter Student ID:</string>
+    <string name="studentPassword">Password</string>
+    <string name="studentPasswordPrompt">Enter Password:</string>
+    <string name="loginButton">Login</string>
+    <string name="goBackButton">Go Back</string>
+
+    <!-- Faculty Login -->
+    <string name="facultyLoginTopText">Login:</string>
+    <string name="facultyLoginUsername">Username</string>
+    <string name="facultyLoginUsernamePrompt">Enter Username:</string>
+    <string name="facultyPassword">Password</string>
+    <string name="facultyPasswordPrompt">Enter Password:</string>
+    <string name="loginButt">Login</string>
+    <string name="backButt">Go Back</string>
+
+    <!-- Student Main -->
+    <string name="welcomeText">Welcome!</string>
+    <string name="classScheduleButton">Class Schedule</string>
+    <string name="campusMapButton">Map of Campus</string>
+    <string name="schoolEventsButton">Regis Events</string>
+    <string name="buildingHoursButton">Regis Building Hours</string>
+    <string name="stuMainBackButton">Back</string>
+
+    <!-- Faculty Screen -->
+    <string name="studentNamePrompt">Please Enter the Student ID of the Student You Are Looking For:</string>
+    <string name="studentID">Student ID</string>
+    <string name="facSubBttn">Submit</string>
+
+    <!-- Faculty Edit -->
+    <string name="classesText">Classes</string>
+    <string name="addNewBttn">Add New</string>
+    <string name="editBackBttn">Go Back</string>
+
+    <!-- Add Class -->
+    <string name="classInfoText">Class Info</string>
+    <string name="studentId">Student ID</string>
+    <string name="className">Class Name and Title (i.e. CS475 Computational Theory)</string>
+    <string name="meetTime">Meeting Time (i.e. 11:00 a.m. - 12:15 p.m.)</string>
+    <string name="location">Location (i.e. Clark Hall / Room 406)</string>
+    <string name="term">Term (i.e. 2021 Fall Semester)</string>
+    <string name="startDate">Start Date (i.e. 08/23/2021)</string>
+    <string name="addBut">Add</string>
+    <string name="cancelBut">Cancel</string>
+
+    <!-- Fac Class Details -->
+    <string name="saveButton">Save</string>
+
+    <!-- Events -->
+    <string name="events">Upcoming Events</string>
+    <string-array name="eventsarray">
+        <item>Graduation Dec. 18th</item>
+        <item>Mr. Boyle Goes Back to Texas Dec. 9th</item>
+        <item>Winter Break Dec. 13th</item>
+    </string-array>
+
+    <!-- Building Hours -->
+    <string name="hours">Building Hours</string>
+    <string-array name="hoursarray">
+        <item>Cafeteria: 9:00 a.m. - 7:00 p.m.</item>
+        <item>Clark Hall: 6:00 a.m. - 5:00 p.m.</item>
+        <item>Loyola Hall: 6:00 a.m. - 12:00 p.m.</item>
+    </string-array>
+
+    <!-- Student Class Schedule Details -->
+    <string name="backButton">Back</string>
+
+
+</resources>

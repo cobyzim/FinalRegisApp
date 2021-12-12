@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/studentloginbackground"
+    tools:context=".MainStudentActivity">
+
+    <Button
+        android:id="@+id/buildingHoursButtonId"
+        android:layout_width="367dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="39dp"
+        android:background="@color/regis_gray"
+        android:text="@string/buildingHoursButton"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolEventsButtonId" />
+
+    <Button
+        android:id="@+id/schoolEventsButtonId"
+        android:layout_width="367dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="33dp"
+        android:background="@color/regis_gray"
+        android:text="@string/schoolEventsButton"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapButtonId" />
+
+    <Button
+        android:id="@+id/mapButtonId"
+        android:layout_width="367dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="33dp"
+        android:background="@color/regis_gray"
+        android:text="@string/campusMapButton"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classSchedButtonId" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/welcomeId"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/welcomeText"
+        android:textAllCaps="true"
+        android:textColor="@color/navy_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/classSchedButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/classSchedButtonId"
+        android:layout_width="367dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/regis_gray"
+        android:text="@string/classScheduleButton"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeId" />
+
+    <Button
+        android:id="@+id/stuMainBackButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/yellow"
+        android:text="@string/stuMainBackButton"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buildingHoursButtonId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

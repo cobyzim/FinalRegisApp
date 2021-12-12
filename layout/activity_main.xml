@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/mainBottomTextID"
+        android:layout_width="341dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/haveAccount"
+        android:textAlignment="center"
+        android:textColor="@color/navy_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainStudentButtonID" />
+
+    <TextView
+        android:id="@+id/mainTopTextID"
+        android:layout_width="341dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/studentOrFaculty"
+        android:textAlignment="center"
+        android:textColor="@color/navy_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeID" />
+
+    <Button
+        android:id="@+id/mainStudentButtonID"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/yellow"
+        android:text="@string/studentButton"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toStartOf="@+id/mainFacultyButtonID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTopTextID" />
+
+    <Button
+        android:id="@+id/mainFacultyButtonID"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="51dp"
+        android:background="@color/yellow"
+        android:text="@string/facultyButton"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintBottom_toTopOf="@+id/mainBottomTextID"
+        app:layout_constraintEnd_toEndOf="@+id/mainTopTextID" />
+
+    <Button
+        android:id="@+id/createAccountButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:background="@color/yellow"
+        android:text="@string/createAccountButton"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainBottomTextID" />
+
+    <TextView
+        android:id="@+id/welcomeID"
+        android:layout_width="172dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/welcome"
+        android:textAlignment="viewStart"
+        android:textColor="#051571"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

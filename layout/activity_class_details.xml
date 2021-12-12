@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/detailsSaveButtonId"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:background="@color/yellow"
+        android:text="@string/saveButton"
+        android:onClick="save"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toStartOf="@+id/detailsCancelButId"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAddStartDateId" />
+
+    <EditText
+        android:id="@+id/detailsAddStartDateId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/startDate"
+        android:inputType="text"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAddTermId" />
+    <!-- tools:ignore -->
+
+    <EditText
+        android:id="@+id/detailsAddTermId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="39dp"
+        android:hint="@string/term"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAddLocationId" />
+
+    <EditText
+        android:id="@+id/detailsAddLocationId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="43dp"
+        android:hint="@string/location"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAddMeetTimeId" />
+
+    <EditText
+        android:id="@+id/detailsAddMeetTimeId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:hint="@string/meetTime"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAddClassNameId" />
+
+    <EditText
+        android:id="@+id/detailsAddClassNameId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="39dp"
+        android:hint="@string/className"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAddStuIDid" />
+
+    <TextView
+        android:id="@+id/detailsClassInfoTextId"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:text="@string/classInfoText"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/navy_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/detailsAddStuIDid"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:hint="@string/studentID"
+        android:inputType="text"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsClassInfoTextId" />
+
+    <Button
+        android:id="@+id/detailsCancelButId"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:background="@color/yellow"
+        android:text="@string/cancelBut"
+        android:onClick="cancel"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="@+id/detailsAddStartDateId"
+        app:layout_constraintTop_toBottomOf="@+id/detailsAddStartDateId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

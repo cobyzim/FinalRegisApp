@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/facultyloginbackground"
+    tools:context=".FacultyScreenActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/enterStudentPromptId"
+        android:layout_width="304dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/studentNamePrompt"
+        android:textAllCaps="true"
+        android:textColor="@color/navy_blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/enterStudentId"
+        android:layout_width="322dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="33dp"
+        android:hint="@string/studentID"
+        android:inputType="text"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        app:layout_constraintStart_toStartOf="@+id/enterStudentPromptId"
+        app:layout_constraintTop_toBottomOf="@+id/enterStudentPromptId" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="336dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facSubButton"
+        app:srcCompat="@drawable/regismainhall" />
+
+    <Button
+        android:id="@+id/facSubButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:background="@color/regis_gray"
+        android:text="@string/facSubBttn"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterStudentId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

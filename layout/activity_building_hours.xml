@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuildingHoursActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/hoursId"
+        android:layout_width="358dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/hours"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/navy_blue"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ListView
+        android:id="@+id/hoursListViewId"
+        android:layout_width="409dp"
+        android:layout_height="577dp"
+        android:layout_marginTop="1dp"
+        android:entries="@array/hoursarray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hoursId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

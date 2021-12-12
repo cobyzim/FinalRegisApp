@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentClassDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/schedStartDateId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/startDate"
+        android:background="@drawable/textview_border"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedTermId" />
+    <!-- tools:ignore -->
+
+    <TextView
+        android:id="@+id/schedTermId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="39dp"
+        android:hint="@string/term"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        android:background="@drawable/textview_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedLocationId" />
+
+    <TextView
+        android:id="@+id/schedLocationId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="43dp"
+        android:hint="@string/location"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        android:background="@drawable/textview_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedMeetTimeId" />
+
+    <TextView
+        android:id="@+id/schedMeetTimeId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:hint="@string/meetTime"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        android:background="@drawable/textview_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedClassNameId" />
+
+    <TextView
+        android:id="@+id/schedClassNameId"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="39dp"
+        android:hint="@string/className"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        android:background="@drawable/textview_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedStuIDid" />
+
+    <TextView
+        android:id="@+id/schedClassInfoTextId"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:text="@string/classInfoText"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/navy_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/schedStuIDid"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        android:hint="@string/studentID"
+        android:background="@drawable/textview_border"
+        android:textColor="@color/navy_blue"
+        android:textColorHint="@color/navy_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedClassInfoTextId" />
+
+    <Button
+        android:id="@+id/backButId"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/yellow"
+        android:text="@string/backButton"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedStartDateId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

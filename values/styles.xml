@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="LaunchTheme" parent="Theme.RegisApplication">
+        <item name="android:windowBackground">@drawable/regislogo1</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/regis_gray</item>
+        <item name="android:textColorSecondary">@color/regis_gray</item>
+    </style>
+</resources>

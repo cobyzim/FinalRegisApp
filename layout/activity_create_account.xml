@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbackground"
+    tools:context=".CreateAccountActivity">
+
+    <Button
+        android:id="@+id/cancelbutton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="47dp"
+        android:background="@color/yellow"
+        android:text="@string/cancelBttn"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/submitbutton"
+        app:layout_constraintTop_toBottomOf="@+id/accountPassword" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/accountTopTextID"
+        android:layout_width="286dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/createAccountTopText"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/studentFacultyID"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/usernameHint"
+        android:inputType="text"
+        android:textColorHint="@color/navy_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/accountPassword"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/passwordHint"
+        android:inputType="textPassword"
+        android:textColorHint="@color/navy_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentFacultyID" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="287dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountTopTextID">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selectStuOrFac"
+            android:textAllCaps="false"
+            android:textColor="@color/navy_blue"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/facultyRadioButton"
+            android:layout_width="263dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/facultyRadioButtn"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/studentRadioButton"
+            android:layout_width="263dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/studentRadioButtn"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/yellow"
+        android:text="@string/submitBttn"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toStartOf="@+id/cancelbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

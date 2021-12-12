@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/studentloginbackground"
+    tools:context=".StudentLoginActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/loginTextId"
+        android:layout_width="192dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/studentLoginTopText"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textColor="@color/navy_blue"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/studentIDPromptId"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/studentIDid"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:hint="@string/studentLoginID"
+        android:inputType="text"
+        android:textColorHint="@color/navy_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentIDPromptId" />
+
+    <TextView
+        android:id="@+id/studentIDPromptId"
+        android:layout_width="184dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/studentLoginIDPrompt"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/studentIDid"
+        app:layout_constraintTop_toBottomOf="@+id/loginTextId" />
+
+    <EditText
+        android:id="@+id/studentPasswordId"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:hint="@string/studentPassword"
+        android:inputType="textPassword"
+        android:textColorHint="@color/navy_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentPasswordPromptId" />
+
+    <TextView
+        android:id="@+id/studentPasswordPromptId"
+        android:layout_width="184dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/studentPasswordPrompt"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/studentIDid"
+        app:layout_constraintTop_toBottomOf="@+id/studentIDid" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="73dp"
+        android:background="@color/yellow"
+        android:text="@string/loginButton"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintStart_toStartOf="@+id/studentPasswordId"
+        app:layout_constraintTop_toBottomOf="@+id/studentPasswordId" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/yellow"
+        android:text="@string/goBackButton"
+        android:textColor="@color/navy_blue"
+        app:layout_constraintEnd_toEndOf="@+id/studentPasswordId"
+        app:layout_constraintTop_toBottomOf="@+id/studentPasswordId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
